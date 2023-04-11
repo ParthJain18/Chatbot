@@ -1,0 +1,74 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi", "Is anyone there?", "Hello", "Good day", "hey","heya"],
+         "responses": ["Hello!", "Good to see you again!", "Hi there, how can I help?"],
+         "context_set": ""
+        },
+        {"tag": "whatsup",
+         "patterns": ["Hey, how's it going?", "How are you","How's life?","what's up", "wassup"],
+         "responses": ["I am good!", "I'm great. How can I help you?","As healthy as computer programs can get!"],
+         "context_set": ""
+        },
+        {"tag": "goodbye",
+         "patterns": ["cya", "See you later", "Goodbye", "I am Leaving", "Have a Good day"],
+         "responses": ["Sad to see you go :(", "Talk to you later", "Goodbye!"],
+         "context_set": ""
+        },
+        {"tag": "menu",
+         "patterns": ["What types of cakes do you have", "Types of cakes","what's on the menu today","what should I buy", "what do you offer", "What can I buy?"],
+         "responses": ["This is our menu for today : <br> <br><ul><li style='margin-left:20px;'> Chocolate Cake</li> <li style='margin-left:20px;'> Vanilla Cake</li><li style='margin-left:20px;'> Red-Velvet Cake</li><li style='margin-left:20px;'> Ras-Malai Cake</li></ul><br> All the above cakes come in half kg and 1 kg variations, costing Rs 500 and Rs 1,000 resspectively.<br>For custom orders, contact us at least 6 hours before pick-up"],
+         "context_set": ""
+        },
+        {"tag": "name",
+         "patterns": ["what is your name", "what should I call you", "whats your name?", "Who are you"],
+         "responses": ["You can call me Sweet-tooth Bot", "I'm Sweet-tooth Bot! :)"],
+         "context_set": ""
+        },
+        {"tag": "veg",
+         "patterns": ["Do you offer veg cakes","vegeterian cakes", "veg cakes"],
+         "responses": ["Yes, we offer pure veg cakes as well! :)"],
+         "context_set": ""
+        },
+        {"tag": "Customize",
+         "patterns": ["Can I customize my order","do you take custom orders?","do you make custom cakes"],
+         "responses": ["Yes! Just make sure to contact us atleast 6 hours before the pick-up time. :)"],
+         "context_set": ""
+        },
+        {"tag": "reccomendation",
+         "patterns": ["What do you reccomend?", "any reccomendation?", "what's your speciality", "what's your favorite"],
+         "responses": ["Our Chocolate cakes are famous for it's rich taste", "Our Ras-Malai cakes have recieved excellant feedbacks from customers so far"],
+         "context_set": ""
+        },
+        {"tag": "delivery",
+         "patterns": ["Do you deliver cakes", "can you deliver cakes at our home","do you provide delivery service"],
+         "responses": ["Yes! We can deliver cakes at your home"],
+         "context_set": ""
+        },
+
+        {"tag": "other_orders",
+         "patterns": ["Do you sell anything beside cakes?", "I don't want a cake", "I don't like cake", "are there any pastries?", "do you sell pastries?", "do you sell anything other than cakes?"],
+         "responses": ["We also offer pastries, cookies and various beverages. Visit our store to check them out!"],
+         "context_set": ""
+        },
+        {"tag": "price",
+         "patterns": ["How much does it costs?","what's the pricing?","what is the cost for chocolate cake"],
+         "responses": ["You can buy a half kg cake for Rs. 500, and a full kg cake for Rs. 1000"],
+         "context_set": ""
+        },
+        {"tag": "order",
+         "patterns": ["How do I order a cake", "Can I order it online", "can I buy it from your website","How do I buy a cake"],
+         "responses": ["You can visit our store to place an order. Alternatively, you can also use our website to place an order."],
+         "context_set": ""
+        },
+        {"tag": "discount",
+         "patterns": ["Do you offer a dicount", "Please give me a dicount", "I can't afford it", "It's too costly"],
+         "responses": ["Okay, just this once, I can give you a special discount. Use code 'ILoveSweetTooth' to avail a 10% discount.<br> One time use only! ;)"],
+         "context_set": ""
+        },
+        {"tag": "hours",
+         "patterns": ["when are you guys open", "what are your hours", "hours of operation", "when can I order a cake"],
+         "responses": ["We are open 7am-4pm Monday-Friday! And be sure to place your order at least 2 hours before your pick-up time."],
+         "context_set": ""
+        }
+   ]
+}

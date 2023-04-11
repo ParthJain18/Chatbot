@@ -1,0 +1,163 @@
+body{
+  font-family: Roboto;
+  color: 		rgb(50,50,50);
+
+}
+
+
+/* Curtain try:  */
+
+.grid {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.5s, z-index 0s 0.5s;
+}
+
+.grid.show {
+  opacity: 1;
+  z-index: 1;
+  transition: opacity 0.5s;
+}
+
+.container {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  transition: top 0.5s;
+}
+
+.show {
+  top: 0;
+  transition: top 0.5s 0.5s;
+}
+
+
+/* End  */
+
+/* .curtain {
+  width: 100vh;
+  height: 100vh;
+  margin: 0px;
+  min-width: 100%;
+  overflow: hidden;
+  transform-origin: bottom; Set the transform origin to the bottom of the curtain
+  transition: transform 0.5s ease-in-out;
+} */
+
+
+.bakery-background {
+  max-width: 100%;
+  filter: blur(1px);
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  object-position: bottom;
+}
+
+.card {
+  width: 60%;
+  height: 90%;
+  margin-top: -5%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  background: linear-gradient(90deg, rgba(0, 201, 255,0.2) 0%, rgba(146, 254, 157, 0.2) 100%);
+  backdrop-filter: blur(5px);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  grid-template-rows: 100%;
+  position: relative;
+  bottom: -35%;
+  min-height: 60%;
+  max-height: 100%;
+  column-gap: 10px;
+}
+
+.images {
+  max-width: 100%;
+  margin-top: 10%;
+  padding-right: 5%;
+  position: relative;
+  border-right: 2px solid;
+  border-image: linear-gradient(
+      to bottom,
+      rgba(200, 200, 200, 0) 0%,
+      rgba(200, 200, 200, 1) 50%,
+      rgba(200, 200, 200, 0) 100%
+    )
+    1;
+}
+
+.Texts {
+  max-width: 100%;
+  padding: 0;
+}
+
+p {
+  margin: 0px;
+  vertical-align: middle;
+}
+
+.card-content {
+  padding: 40px;
+  display: grid;
+  grid-template-rows: 1fr 2fr 0.5fr;
+}
+
+.content-title {
+  text-align: center;
+  font-weight: 900;
+  font-size: 25px;
+  margin-top: 20px;
+}
+
+.content-text{
+  margin-top: 10px;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  line-height: 22px;
+}
+.lets-go {
+  background-color: rgb(3, 72, 201);
+  color: white;
+  max-width: fit-content;
+  padding: 20px 30px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+}
+
+.lets-go:hover {
+  background-color: rgb(4, 150, 248);
+}
+
+.cake-addict{
+  position:absolute;
+  text-align: center;
+  width: 100%;
+  font-weight: 900;
+  font-size: 35px;
+  top: 110px;
+  left: 50%;
+  transform: translate(-50%);
+}

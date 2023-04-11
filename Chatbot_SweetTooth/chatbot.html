@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Chatbot</title>
+  <link rel="stylesheet" href="stylefront.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+
+
+<div class="curtain">
+  <img src="Resources/donuts-with-eyes-close-up.jpg" class="bakery-background">
+  <div class="card">
+    <h1 class="cake-addict">Cake Addict, the best cakes in town!</h1>
+    <div class="card-grid">
+
+      <img src="Resources/chat-bot.png" class="images">
+
+      <div class="card-content">
+        <p class="content-title">
+          Welcome to Cake Addict!
+        </p>
+
+        <p class="content-text">
+          Welcome to our delicious world of cakes, where every slice is a sweet delight!<br>
+          Need some assistance? Our chatbot is here to help!
+        </p>
+        <div style="display: flex; justify-content: center;">
+          <a class="lets-go" id="open-chat-btn" href="chat-window.html">
+            Let's Go!
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+
+
+<script>
+  const openChatBtn = document.getElementById("open-chat-btn");
+const chatPage = document.querySelector(".grid");
+const chatContainer = document.querySelector(".container");
+
+openChatBtn.addEventListener("click", () => {
+  chatPage.classList.add("show");
+  chatContainer.classList.add("show");
+});
+
+</script>
+</html>

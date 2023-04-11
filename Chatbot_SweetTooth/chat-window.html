@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat Interface</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+</head>
+
+<body>
+
+  
+
+  <div class="grid">
+    <div class="sidebar">
+      <h1 class = "name-heading">ChatBot</h1>
+      <ul>
+        <li><a href="chatbot.html">Home</a></li>
+        <li class="gpt-card"><span class="gpt-toggle" onclick="toggleGpt4()">Switch to GPT-4?</span> <span class="material-symbols-outlined" onclick="toggleGpt4()" id= "toggle-gpt4">
+          toggle_off
+          </span> </li>
+        <li class="dark"><span onclick="toggleDarkMode()">Dark Mode</span><span class="material-symbols-outlined" onclick="toggleDarkMode()" id= "toggle-dark-mode">
+          toggle_off
+          </span></li>
+        <li class="clear"><a href="#">Clear</a></li>
+      </ul>
+    </div>
+
+    <div class="container">
+      <div class="chat-window">
+
+
+        <div class="chat-window">
+          <div class="chat-header">
+            <img class="profile-pic" src="Resources/pastry.png">
+            <div class="name-n-des">
+              <h1>Cake Addict</h1>
+              <p>Welcome to our awesome chatbot! We are excited to help you with any queries you may have!</p>
+            </div>
+          </div>
+          <div class="chat-messages">
+
+            <div class="chat-message system-message">
+              <div class="message-content">
+                Hi there! I'm a chatbot. What would you like to know?
+              </div>
+            </div>
+
+          </div>
+
+          <div class="chat-input">
+            <input type="text" placeholder="Type your message here..">
+            <button>Send</button>
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+  </div>
+
+<script src="./app.js"></script>
+
+
+</body>
+
+</html>

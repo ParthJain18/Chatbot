@@ -1,0 +1,10 @@
+nltk
+numpy
+tflearn
+json
+random
+pickle
+tensorflow
+flask
+flask_cors
+mysql-connector-python
