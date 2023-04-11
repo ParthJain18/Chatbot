@@ -6,11 +6,13 @@ var chatbotEndpoint = 'http://localhost:5000/chatbot';
 function toggleDarkMode() {
   
   var span = document.querySelector("#toggle-dark-mode");
+  const body = document.querySelector("body");
+  const chatContainer = document.querySelector(".chat-container");
+  
   if (span.textContent === "toggle_off") {
     span.textContent = "toggle_on";
     span.style = "color: black;";
-    const body = document.querySelector("body");
-    const chatContainer = document.querySelector(".chat-container");
+    
     body.classList.toggle("dark-mode");
     chatContainer.classList.toggle("dark-mode");
 
@@ -18,6 +20,8 @@ function toggleDarkMode() {
     span.textContent = "toggle_off";
     span.style ="color:rgba(0, 0, 0, 0.3);";
 
+    body.classList.toggle("light-mode");
+    chatContainer.classList.toggle("light-mode");
   }
 }
 

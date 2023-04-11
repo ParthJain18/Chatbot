@@ -24,6 +24,11 @@ body {
 .dark-mode {
   --bg-color: #242323;
   --text-color: black;
+  background-image: none;
+}
+.light-mode{
+  background-image: url("Resources/brooke-lark-pGM4sjt_BdQ-unsplash.jpg");
+
 }
 
 
